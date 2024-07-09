@@ -1,0 +1,141 @@
+/* #282828 header background color */
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+     font-family: Helvetica, Arial, Lucida , sans-serif;
+     overflow: hidden;
+}
+header {
+  background-color: #282828;
+}
+header .right-icons-group {
+  gap: 1rem;
+}
+nav{
+  align-items: center;
+}
+header .right-icons-group a img {
+  width: 1.6rem;
+}
+header .right-icons-group a.shopping span {
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  /* padding: 0.1rem; */
+  align-items: center;
+  font-weight: bold;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 0.7rem;
+  right: -0.5rem;
+}
+
+.sm-d-hiddden {
+  display: none;
+}
+.left-align {
+  position: absolute;
+  left: 10rem;
+}
+
+.navLinks ul li img {
+  display: none !important;
+}
+.navLinks ul li a{
+  position: relative;
+  display: block;
+}
+.navLinks ul li a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  background-color: rgb(241, 238, 240);
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+
+li a::after {
+  opacity :1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+li a:hover::after,
+li a:focus::after{
+  transform: translate3d(0, 0, 0);
+}
+@media (min-width: 1024px){
+
+}
+@media (max-width: 768px),
+(max-width: 1024px) {
+  .navLinks {
+    position: absolute;
+    background-color: #eee;
+    min-height: 100vh;
+    top: 0;
+    left: -100%;
+    width: 20rem;
+    padding: 20px;
+    transition: all 0.4s;
+    font-size: 1.3rem;
+    font-weight: bold;
+    z-index: 3333;
+  }
+  .navLinks ul {
+    flex-direction: column !important;
+    color: black;
+    gap: 1rem;
+  }
+  .navLinks ul li:not(:first-child){
+    border-bottom: 0.1px solid #d1cece;
+    padding: 30px;
+  }
+  .navLinks ul li img {
+    display: block !important;
+    cursor: pointer;
+    width: 2rem;
+    margin-top: 2rem;
+    border: none;
+  }
+  nav .menubars{
+    display: block;
+     cursor: pointer;
+  }
+  .right-icons-group .search{
+     position: absolute;
+     left: 8rem;
+  }
+}
+
+@media (max-width: 640px){
+  .right-icons-group .mail{
+    display: none;
+  }
+  .right-icons-group .user{
+    display: none;
+  }
+  .right-icons-group .search{
+    left: 5rem;
+  }
+
+}
+.swiper {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+}
+
+
+.swiper-pagination-bullet{
+  background-color: #fff !important;
+  width: 70px !important;
+  height: 2px !important;
+  border-radius:0% !important;
+  transition:  2s;
+}

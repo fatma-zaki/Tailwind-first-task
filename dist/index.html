@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>tailwind</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="/src/output.css" rel="stylesheet" />
+    <!-- //swiper link -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  
+  </head>
+  <body onclick="">
+    <header class="flex p-6 w-full h-20 fixed z-40">
+      <nav class="h-full flex align-middle  justify-between container mx-auto">
+       
+       
+        <img class=" hidden sm:max-md:block" onclick="openMenu()" src="/imgs/menu_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" class="menubars sm-d-hiddden" class="cursor-pointer"/>
+       
+       
+       
+        <div class="logo">
+          <img class="w-20" src="/imgs/logo.avif" alt="" />
+        </div>
+
+
+
+
+        <div onblur="" class="navLinks h-fit  ">
+          <ul class="flex  text-gray-50 gap-5 h-full capitalize text-lg flex-col lg:flex-row ">
+            <li class="" onclick="closeMenu()">
+              <img src="/imgs//close_30dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="">
+            </li>
+            <li class="p-2 ">
+              <a href="">shop by category</a>
+            </li>
+            <li class="p-2">
+              <a href="">shop by device</a>
+            </li >
+            <li class="p-2">
+              <a href="">collections</a>
+            </li>
+            <li class="p-2">
+              <a class="" href="">blog</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="right-icons-group flex ">
+
+           <a class="mail cursor-pointer">
+             <img
+               src="/imgs/mail_24dp_EEE_FILL0_wght400_GRAD0_opsz24.svg"
+             /> 
+           </a>
+           <a class="search cursor-pointer"">
+             <img
+               src="/imgs/search_41dp_EEE_FILL0_wght400_GRAD0_opsz40.svg"
+             />
+           </a>
+           <a class="user cursor-pointer"">
+             <img src="/imgs/person_41dp_EEE_FILL0_wght400_GRAD0_opsz40.svg" />
+           </a>
+         <a class="shopping flex relative cursor-pointer"">
+           <img
+             src="/imgs/shopping_bag_41dp_EEE_FILL0_wght400_GRAD0_opsz40.svg"
+           />
+           <span class="bg-white text-black absolute">0</span>
+         </a>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper" >
+    <!-- Slides -->
+    <div class="swiper-slide left-0 flex relative" >
+      <img class="w-full" src="/imgs/slide1a.webp" alt="">
+    <div class="textSlide absolute left-20 top-1/2 -translate-y-1/2 z-50 text-slate-100">
+        <p class="font-bold text-[13px] mb-10  uppercase">premium collection</p>
+        <h2 class="font-bold uppercase text-[75px] leading-[1] ">the heritage <br/> collection</h2>
+        <button class="bg-yellow-300 font-semibold text-black uppercase p-2 w-[150px] mt-9 ">learn more</button>
+        <button class="bg-yellow-300 font-semibold  text-black uppercase p-2 w-[150px] mt-9 ml-3">shop</button>
+ 
+      </div>
+    </div>
+    <div class="swiper-slide left-0 w-full">
+      <img class="w-full" src="/imgs/slide2.webp" alt="">
+      <div class="textSlide absolute left-20 top-1/2 -translate-y-1/2 z-50 text-slate-100">
+        <p class="font-bold text-[13px] mb-10  uppercase">premium collection</p>
+        <h2 class="font-bold uppercase text-[75px] leading-[1] ">the heritage <br/> collection</h2>
+        <button class="bg-yellow-300 font-semibold text-black uppercase p-2 w-[150px] mt-9 ">learn more</button>
+        <button class="bg-yellow-300 font-semibold ml-3 text-black uppercase p-2 w-[150px] mt-9 ">shop</button>
+ 
+      </div>
+    </div>
+  
+    <div class="swiper-slide left-0 flex">
+      <img class="w-1/2" src="/imgs/slide3a.webp" alt="">
+      <img class="w-1/2" src="/imgs/slide3b.webp" alt="">
+      <div class="textSlide absolute left-20 top-1/2 -translate-y-1/2 z-50 text-slate-100">
+      <p class="font-bold text-[13px] mb-10  uppercase">premium collection</p>
+      <h2 class="font-bold uppercase text-[75px] leading-[1] ">the heritage <br/> collection</h2>
+      <button class="bg-yellow-300 font-semibold text-black uppercase p-2 w-[150px] mt-9 ">learn more</button>
+      <button class="bg-yellow-300 font-semibold ml-3 text-black uppercase p-2 w-[150px] mt-9 ">shop</button>
+
+    </div>
+  </div>
+
+    <div class="swiper-slide left-0 flex" ><img class="w-1/2" src="/imgs/slide4a.webp" alt=""><img class="w-1/2" src="/imgs/slide4b.webp" alt="">
+      <div class="textSlide absolute left-20 top-1/2 -translate-y-1/2 z-50 text-slate-100">
+      <p class="font-bold text-[13px] mb-10  uppercase">premium collection</p>
+      <h2 class="font-bold uppercase text-[75px] leading-[1] ">the heritage <br/> collection</h2>
+      <button class="bg-yellow-300 font-semibold text-black uppercase p-2 w-[150px] mt-9 ">learn more</button>
+      <button class="bg-yellow-300 font-semibold ml-3 text-black uppercase p-2 w-[150px] mt-9 ">shop</button>
+
+    </div>
+  </div>
+
+    <div class="swiper-slide left-0">
+      <img class=" " src="/imgs/slide5a.webp" alt="">
+      <div class="textSlide absolute left-20 top-1/2 -translate-y-1/2 z-50 text-slate-100">
+      <p class="font-bold text-[13px] mb-10  uppercase">premium collection</p>
+      <h2 class="font-bold uppercase text-[75px] leading-[1] ">the heritage <br/> collection</h2>
+      <button class="bg-yellow-300 font-semibold text-black uppercase p-2 w-[150px] mt-9 ">learn more</button>
+      <button class="bg-yellow-300 font-semibold ml-3 text-black uppercase p-2 w-[150px] mt-9 ">shop</button>
+
+    </div>
+  </div>
+
+</div>
+    
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div> 
+
+  <!-- If we need scrollbar -->
+  <!-- <div class="swiper-scrollbar"></div> -->
+</div>
+  </body>
+  <!-- swiper script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const menu = document.querySelector('.navLinks')
+//navLinks menu show on responsive
+    const closeMenu = ()=>{
+      menu.style.left = '-100%'
+    }
+    
+    const openMenu = ()=>{
+      menu.style.left = '0'
+    }
+
+    // swiper script
+    const swiper = new Swiper('.swiper', {
+     
+  // Optional parameters
+  loop: true,
+          
+            autoplay: {
+    delay: 5000,
+  },
+        
+  
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+});
+
+
+  </script>
+</html>
